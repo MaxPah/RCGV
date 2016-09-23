@@ -1,0 +1,74 @@
+/* --- NAVBAR --- */
+.navbar-default {
+ border: none;
+}
+.navbar {
+  border-radius: inherit;
+}
+
+.navbar-rcgv {
+  background-color: @rcgv-black;
+  margin-bottom: 0;
+
+  .navbar-rcgv-logo {
+    padding-top: 5px;
+  }
+
+  .navbar-text,
+  .navbar-brand {
+    color: @rcgv-white;
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        color: @rcgv-white;
+      }
+    }
+  }
+}
+
+/* --- MAIN CONTENT --- */
+.rcgv-main-container {
+  background-color: @rcgv-black;
+
+  .rcgv-col{
+    padding-top: 30px;
+  }
+
+  .main-col {
+    background-color: @rcgv-white;
+  }
+
+  .left-col {
+
+    .nav-pills {
+
+      li {
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: @rcgv-white;
+
+          &:hover,
+          &:focus {
+            color: @rcgv-black;
+          }
+        }
+      }
+      > li.active {
+
+        > a,
+        > a:hover,
+        > a:focus {
+          background-color: @rcgv-red;
+          color: @rcgv-white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "RCGV",
+  "author": "Pierre Lizet <lizet.pierre@gmail.com>",
+  "main": "bower.json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+     "bootstrap": "3.3.*",
+     "jquery": "3.1.*"
+  }
+}

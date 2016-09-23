@@ -1,0 +1,49 @@
+.rcgv-main-container {
+
+  .main-col {
+
+    .nav-pills {
+
+      li {
+
+        a {
+          color: @rcgv-black;
+
+          &:hover,
+          &:focus {
+            background-color: @rcgv-red;
+            color: @rcgv-white;
+          }
+        }
+      }
+      > li.active {
+
+        > a,
+        > a:hover,
+        > a:focus {
+          background-color: @rcgv-red;
+          color: @rcgv-white;
+        }
+      }
+    }
+
+    .rcgv-player-row {
+      margin-top: 25px;
+
+      .panel-default {
+
+        .panel-heading {
+          background-color: @rcgv-grey;
+        }
+
+        .panel-body {
+          padding: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
