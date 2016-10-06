@@ -5,9 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-
-  // Création du répertoire d'image pour l'application s'il n'existe pas.
-  //grunt.file.mkdir('../travel/app/Resources/public/images/');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // properties are css files
   // values are less files
@@ -40,7 +38,8 @@ module.exports = function(grunt) {
           'bootstrap/js/collapse.js',
           'bootstrap/js/carousel.js',
           'bootstrap/js/affix.js',
-          'travel/js/scripts.js'
+          'bxslider-4/dist/jquery.bxslider.min.js',
+          'rcgv/js/scripts.js'
         ],
         dest: 'dist/rcgv/js/scripts.js'
       }
@@ -51,12 +50,25 @@ module.exports = function(grunt) {
           'dist/rcgv/js/scripts.min.js': ['dist/rcgv/js/scripts.js']
         }
       }
+    },
+    cssmin: {
+      dist: {
+        options: {
+          banner: '/* RCGV - Maxime PAHUD && Pierre Lizet */'
+        },
+        files: {
+          'dist/rcgv/css/rcgv.min.css': [
+            'bxslider-4/dist/jquery.bxslider.min.css',
+            'dist/rcgv/css/rcgv.css'
+          ]
+        }
+      }
     }
   });
 
   // Default task(s).
   grunt.registerTask('default', ['css', 'javascript']);
-  grunt.registerTask('css', ['less:discovering', 'less']);
+  grunt.registerTask('css', ['less:discovering', 'less', 'cssmin']);
   grunt.registerTask('javascript', ['concat', 'uglify']);
   grunt.registerTask('deploy', ['assets:install', 'default']);
   grunt.registerTask('less:discovering', 'This is a function', function() {

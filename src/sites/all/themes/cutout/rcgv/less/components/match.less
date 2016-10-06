@@ -1,91 +1,117 @@
-.rcgv-event {
-  .rcgv-event-pitch {
-    span {
-      position: absolute;
-      font-weight: bold;
-      font-size: 1.1em;
-      width: 1.5em;
-      text-align: center;
+.rcgv-event-pitch {
+  span {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 1.5em;
+    text-align: center;
 
-      .badge {
-        background-color: @rcgv-red;
-        padding: 3px 0;
+    .badge {
+      background-color: @rcgv-red;
+      padding: 3px 0;
+    }
+
+    &.rcgv-event-first-row {
+      margin-top: @first-row-height-desktop;
+
+      &.one {
+        left: @one-desktop;
       }
-
-      &.rcgv-event-first-row {
-        margin-top: 25px;
-
-        &.one {
-          left: 140px;
-        }
-        &.two {
-          left: 280px;
-        }
-        &.three {
-          left: 420px;
-        }
+      &.two {
+        left: @two-desktop;
       }
-
-      &.rcgv-event-second-row {
-        margin-top: 85px;
-
-        &.four {
-          left: 200px;
-        }
-        &.five {
-          left: 360px;
-        }
+      &.three {
+        left: @three-desktop;
       }
+    }
 
-      &.rcgv-event-third-row {
-        margin-top: 135px;
+    &.rcgv-event-second-row {
+      margin-top: @second-row-height-desktop;
 
-        &.six {
-          left: 120px;
-        }
-        &.eight {
-          left: 280px;
-        }
-        &.seven {
-          left: 440px;
-        }
+      &.four {
+        left: @four-desktop;
       }
-
-      &.rcgv-event-half-row {
-        margin-top: 200px;
-
-        &.nine {
-          left: 190px;
-        }
-        &.ten {
-          left: 370px;
-        }
+      &.five {
+        left: @five-desktop;
       }
+    }
 
-      &.rcgv-event-back-row {
-        margin-top: 250px;
+    &.rcgv-event-third-row {
+      margin-top: @third-row-height-desktop;
 
-        &.eleven {
-          left: 105px;
-        }
-        &.twelve {
-          left: 210px;
-        }
-        &.thirteen {
-          left: 350px;
-        }
-        &.fourteen {
-          left: 455px;
-        }
+      &.six {
+        left: @six-desktop;
       }
+      &.eight {
+        left: @eight-desktop;
+      }
+      &.seven {
+        left: @seven-desktop;
+      }
+    }
 
-      &.rcgv-event-fullback-row {
-        margin-top: 290px;
+    &.rcgv-event-half-row {
+      margin-top: @half-row-height-desktop;
 
-        &.fifteen {
-          left: 280px;
-        }
+      &.nine {
+        left: @nine-desktop;
+      }
+      &.ten {
+        left: @ten-desktop;
+      }
+    }
+
+    &.rcgv-event-back-row {
+      margin-top: @back-row-height-desktop;
+
+      &.eleven {
+        left: @eleven-desktop;
+      }
+      &.twelve {
+        left: @twelve-desktop;
+      }
+      &.thirteen {
+        left: @thirteen-desktop;
+      }
+      &.fourteen {
+        left: @fourteen-desktop;
+      }
+    }
+
+    &.rcgv-event-fullback-row {
+      margin-top: @fullback-row-height-desktop;
+
+      &.fifteen {
+        left: @fifteen-desktop;
       }
     }
   }
+}
+
+.rcgv-event-subs-list {
+
+  li {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .badge {
+      background-color: @rcgv-red;
+      padding: 3px 5px;
+    }
+  }
+
+  .glyphicon-chevron-right {
+    color: @rcgv-green;
+  }
+
+  .glyphicon-chevron-left {
+    color: @rcgv-red;
+  }
+}
+
+.rcgv-event-subs {
+  padding-top: 15px;
 }

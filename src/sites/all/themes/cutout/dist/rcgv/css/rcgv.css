@@ -6722,6 +6722,7 @@ button.close {
   }
 }
 /* --- Colors --- */
+/* --- Players positions--- */
 /* --- NAVBAR --- */
 .navbar-default {
   border: none;
@@ -6798,77 +6799,96 @@ button.close {
 .rcgv-main-container .main-col .rcgv-player-row .panel-default .panel-body img {
   width: 100%;
 }
-.rcgv-event .rcgv-event-pitch span {
+.rcgv-event-pitch span {
   position: absolute;
   font-weight: bold;
   font-size: 1.1em;
   width: 1.5em;
   text-align: center;
 }
-.rcgv-event .rcgv-event-pitch span .badge {
+.rcgv-event-pitch span .badge {
   background-color: #dd0000;
   padding: 3px 0;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-first-row {
+.rcgv-event-pitch span.rcgv-event-first-row {
   margin-top: 25px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-first-row.one {
+.rcgv-event-pitch span.rcgv-event-first-row.one {
   left: 140px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-first-row.two {
-  left: 280px;
+.rcgv-event-pitch span.rcgv-event-first-row.two {
+  left: 285px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-first-row.three {
-  left: 420px;
+.rcgv-event-pitch span.rcgv-event-first-row.three {
+  left: 430px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-second-row {
+.rcgv-event-pitch span.rcgv-event-second-row {
   margin-top: 85px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-second-row.four {
+.rcgv-event-pitch span.rcgv-event-second-row.four {
   left: 200px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-second-row.five {
+.rcgv-event-pitch span.rcgv-event-second-row.five {
   left: 360px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-third-row {
-  margin-top: 135px;
+.rcgv-event-pitch span.rcgv-event-third-row {
+  margin-top: 140px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-third-row.six {
+.rcgv-event-pitch span.rcgv-event-third-row.six {
   left: 120px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-third-row.eight {
-  left: 280px;
+.rcgv-event-pitch span.rcgv-event-third-row.eight {
+  left: 285px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-third-row.seven {
-  left: 440px;
+.rcgv-event-pitch span.rcgv-event-third-row.seven {
+  left: 445px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-half-row {
+.rcgv-event-pitch span.rcgv-event-half-row {
   margin-top: 200px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-half-row.nine {
+.rcgv-event-pitch span.rcgv-event-half-row.nine {
   left: 190px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-half-row.ten {
+.rcgv-event-pitch span.rcgv-event-half-row.ten {
   left: 370px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-back-row {
+.rcgv-event-pitch span.rcgv-event-back-row {
   margin-top: 250px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-back-row.eleven {
-  left: 105px;
+.rcgv-event-pitch span.rcgv-event-back-row.eleven {
+  left: 110px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-back-row.twelve {
-  left: 210px;
+.rcgv-event-pitch span.rcgv-event-back-row.twelve {
+  left: 225px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-back-row.thirteen {
-  left: 350px;
+.rcgv-event-pitch span.rcgv-event-back-row.thirteen {
+  left: 340px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-back-row.fourteen {
+.rcgv-event-pitch span.rcgv-event-back-row.fourteen {
   left: 455px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-fullback-row {
+.rcgv-event-pitch span.rcgv-event-fullback-row {
   margin-top: 290px;
 }
-.rcgv-event .rcgv-event-pitch span.rcgv-event-fullback-row.fifteen {
-  left: 280px;
+.rcgv-event-pitch span.rcgv-event-fullback-row.fifteen {
+  left: 285px;
+}
+.rcgv-event-subs-list li {
+  margin-bottom: 15px;
+}
+.rcgv-event-subs-list li:last-child {
+  margin-bottom: 0;
+}
+.rcgv-event-subs-list li .badge {
+  background-color: #dd0000;
+  padding: 3px 5px;
+}
+.rcgv-event-subs-list .glyphicon-chevron-right {
+  color: #1c961b;
+}
+.rcgv-event-subs-list .glyphicon-chevron-left {
+  color: #dd0000;
+}
+.rcgv-event-subs {
+  padding-top: 15px;
 }
